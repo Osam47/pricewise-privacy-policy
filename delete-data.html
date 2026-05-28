@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PriceWise – Data Deletion Request</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #ffffff;
+      padding: 2rem 1rem;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    header { margin-bottom: 2.5rem; border-bottom: 1px solid #e5e5e5; padding-bottom: 1.5rem; }
+    header h1 { font-size: 26px; font-weight: 600; margin-bottom: 0.4rem; }
+    header p { color: #555; font-size: 14px; }
+    h2 { font-size: 18px; font-weight: 600; margin: 2rem 0 0.6rem; }
+    p { margin-bottom: 0.8rem; color: #333; }
+    ul, ol { margin: 0.4rem 0 0.8rem 1.4rem; color: #333; }
+    li { margin-bottom: 0.4rem; }
+    a { color: #1a73e8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .step-box {
+      background: #f0f7ff;
+      border: 1px solid #c5dff8;
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0;
+    }
+    .step-box h3 { font-size: 15px; font-weight: 600; margin-bottom: 0.8rem; color: #1a1a1a; }
+    .step-box ol { margin-left: 1.2rem; }
+    .step-box li { margin-bottom: 0.5rem; font-size: 15px; }
+    .email-btn {
+      display: inline-block;
+      margin-top: 0.8rem;
+      padding: 0.6rem 1.4rem;
+      background: #1a73e8;
+      color: #fff;
+      border-radius: 8px;
+      font-size: 15px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .email-btn:hover { background: #1558b0; text-decoration: none; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      margin: 1rem 0 1.5rem;
+    }
+    th {
+      background: #f5f5f5;
+      text-align: left;
+      padding: 10px 12px;
+      border: 1px solid #e0e0e0;
+      font-weight: 600;
+    }
+    td {
+      padding: 10px 12px;
+      border: 1px solid #e0e0e0;
+      vertical-align: top;
+    }
+    .badge-deleted {
+      display: inline-block;
+      background: #e8f5e9;
+      color: #2e7d32;
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .badge-kept {
+      display: inline-block;
+      background: #fff3e0;
+      color: #e65100;
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #e5e5e5;
+      font-size: 13px;
+      color: #888;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 21px; }
+      h2 { font-size: 16px; }
+      table { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>Data Deletion Request — PriceWise</h1>
+    <p>Developer: Octadrop LLC &nbsp;|&nbsp; App: PriceWise (com.octadrop.pricewise)</p>
+  </header>
+
+  <p>If you would like to request the deletion of your data associated with PriceWise, please follow the steps below. We will process your request within <strong>30 days</strong>.</p>
+
+  <div class="step-box">
+    <h3>How to request data deletion</h3>
+    <ol>
+      <li>Send an email to <strong>pricewise@octadrop.com</strong> with the subject line:<br><code>Data Deletion Request - PriceWise</code></li>
+      <li>In the body of your email, include:<br>
+        <ul>
+          <li>The mention <strong>"PriceWise data deletion"</strong></li>
+          <li>The approximate date you first used the app (if known)</li>
+          <li>Any other details that may help us identify your data</li>
+        </ul>
+      </li>
+      <li>We will confirm receipt within 5 business days and complete the deletion within 30 days.</li>
+    </ol>
+    <a class="email-btn" href="mailto:pricewise@octadrop.com?subject=Data%20Deletion%20Request%20-%20PriceWise">Send deletion request</a>
+  </div>
+
+  <h2>What data is deleted</h2>
+  <p>The table below shows what happens to each type of data when a deletion request is processed:</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Data type</th>
+        <th>Description</th>
+        <th>Action</th>
+        <th>Retention after request</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>User account (UID)</td>
+        <td>Anonymous Firebase identifier linked to your activity</td>
+        <td><span class="badge-deleted">Deleted</span></td>
+        <td>Within 30 days</td>
+      </tr>
+      <tr>
+        <td>Interaction history</td>
+        <td>Your scan history, searches, and price updates linked to your UID</td>
+        <td><span class="badge-deleted">Deleted</span></td>
+        <td>Within 30 days</td>
+      </tr>
+      <tr>
+        <td>404 scans</td>
+        <td>Barcodes you scanned that returned no result</td>
+        <td><span class="badge-deleted">Deleted</span></td>
+        <td>Within 30 days</td>
+      </tr>
+      <tr>
+        <td>Community product data</td>
+        <td>Product names, brands, and prices you submitted — shared with all users</td>
+        <td><span class="badge-kept">Kept (anonymised)</span></td>
+        <td>Retained indefinitely to preserve community database integrity. Your UID is removed from these records.</td>
+      </tr>
+      <tr>
+        <td>Error reports</td>
+        <td>Product corrections you submitted</td>
+        <td><span class="badge-kept">Kept (anonymised)</span></td>
+        <td>Your UID is removed; the report content may be retained for data quality purposes.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Note on anonymous authentication</h2>
+  <p>PriceWise uses anonymous authentication — no email address or password is required to use the app. Your identity is represented solely by a randomly generated ID (UID) stored on your device. If you uninstall the app, this UID is lost and you will no longer have access to your personal activity data. You may still submit a deletion request to ensure any remaining server-side data linked to your former UID is removed.</p>
+
+  <h2>Contact</h2>
+  <p>For any questions regarding your data or this process, contact us at:<br>
+  <a href="mailto:pricewise@octadrop.com">pricewise@octadrop.com</a></p>
+
+  <footer>
+    <p>© <span id="year"></span> Octadrop LLC – PriceWise. All rights reserved.</p>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+
+</div>
+</body>
+</html>
